@@ -6,7 +6,7 @@ public abstract class Drone {
 
     protected Drone(String id, double maxPayloadKg) {
         if(maxPayloadKg <= 0) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("have to be more than 0");
         }
         this.id = id;
         this.maxPayloadKg = maxPayloadKg;
